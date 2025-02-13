@@ -1,15 +1,16 @@
+````
 package main
 
 import (
-	"net/http"
-	"time"
+"net/http"
+"time"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	// 创建一个默认的路由引擎
-	r := gin.Default()
+// 创建一个默认的路由引擎
+r := gin.Default()
 
 	// 定义一个 GET 接口，路径为 "/current-time"
 	r.GET("/current-time", func(c *gin.Context) {
@@ -26,3 +27,4 @@ func main() {
 	r.Run()
 
 }
+````
